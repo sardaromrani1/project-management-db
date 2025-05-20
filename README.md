@@ -38,4 +38,36 @@ resources table
 task_assignments table
 
 # SQL Files & Usage
+* schema.sql: Creates the core tables (tasks, resources, task_assignments) with appropriate data types, constraints,
+  and relationships.
+* queries.sql: Contains example SQL queries demonstrating data retrieval and manipulation. Common use cases include:
+  - Listing all tasks assigned to a specific resource.
+  - Finding tasks due within a specific data range.
+  - Identifying high-priority tasks that are currently "In Progress."
+  - Calculating the total estimated effort for a given task.
 
+# Getting Started
+1. Clone the Repository:
+''' bash
+git clone https://github.com/sardaromrani1/project-management-db '''
+
+2. Create a Database:
+   Use your preferred database management system to create a new database (e.g., project_management_db).
+
+3. Execute the Schema:
+   Run the schema.sql file to create the tables. For example, using SQLite:
+   bash
+     sqlite3 project_management_db.db < schema.sql
+
+4. (Optional) Explore the Queries:
+   Examine the queries.sql file for example queries. You can execute these queries directly against your database to
+   retrieve and analyze task management data.
+
+# Contribution Guidelines
+Contributions are welcome! Feel free to submit pull requests to:
+* Add new example queries to queries.sql.
+* Enhance the schema with new tables or columns.
+* Improve the documentation.
+
+# License
+This project is licensed under the MIT License.
